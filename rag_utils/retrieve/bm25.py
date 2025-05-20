@@ -1,14 +1,14 @@
-from dataclasses import dataclass, asdict
-import pickle
-from typing import Callable, List, Optional
-import os
 import json
+import os
+import pickle
+from dataclasses import asdict, dataclass
+from typing import Callable, List, Optional
 
 from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
 
-from .base import Vectorstore
 from ..text_utils import preprocess_text
+from .base import Vectorstore
 
 
 @dataclass

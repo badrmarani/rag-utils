@@ -1,7 +1,8 @@
 from typing import Dict, Union
+
+import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.evaluation import InformationRetrievalEvaluator
-import pandas as pd
 
 
 def evaluate(dataframe_or_path: Union[str, pd.DataFrame], embedding_name: str) -> Dict[str, float]:

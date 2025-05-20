@@ -1,9 +1,9 @@
 import argparse
 
 import pandas as pd
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import DataFrameLoader
 import tiktoken
+from langchain_community.document_loaders import DataFrameLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from rag_utils.retrieve.milvus import MilvusConfig, MilvusVectorstore
 

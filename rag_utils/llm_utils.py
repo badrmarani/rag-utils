@@ -3,11 +3,8 @@ from typing import Any, List, Literal
 
 from dotenv import load_dotenv
 from langchain_core.language_models import BaseLanguageModel
-from langchain_openai import (
-    AzureChatOpenAI,
-    AzureOpenAI,
-    AzureOpenAIEmbeddings,
-)
+from langchain_openai import (AzureChatOpenAI, AzureOpenAI,
+                              AzureOpenAIEmbeddings)
 
 load_dotenv()
 
